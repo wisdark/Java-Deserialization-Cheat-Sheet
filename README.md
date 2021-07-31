@@ -247,7 +247,7 @@ no spec tool - You don't need a special tool (just Burp/ZAP + payload)
 - *Protocol*
 - *Default - 1099/tcp for rmiregistry*
 - partially patched in JRE with JEP290 (JDK 8u121, JDK 7u131, JDK 6u141)
-- [Attacking Java RMI services after JEP 290](https://mogwailabs.de/blog/2019/04/attacking-rmi-based-jmx-services/)
+- [Attacking Java RMI services after JEP 290](https://mogwailabs.de/en/blog/2019/03/attacking-java-rmi-services-after-jep-290/)
 - [An Trinhs RMI Registry Bypass](https://mogwailabs.de/blog/2020/02/an-trinhs-rmi-registry-bypass/)
 - [RMIScout](https://labs.bishopfox.com/tech-blog/rmiscout)
 
@@ -897,6 +897,20 @@ Affected products:
 - [CVE-2020-10917](https://www.vulners.com/search?query=CVE-2020-10917)
 - [ZDI-20-684](https://www.zerodayinitiative.com/advisories/ZDI-20-684/)
 
+##### Apache OFBiz
+- RMI
+- [cve-2021-26295](https://www.vulners.com/search?query=cve-2021-26295)
+- [Exploit](https://github.com/zhzyker/exphub/tree/master/ofbiz)
+
+##### NetMotion Mobility 
+- < 11.73 
+- < 12.02
+- [NetMotion Mobility Server Multiple Deserialization of Untrusted Data Lead to RCE](https://www.vulners.com/search?query=CVE-2021-26914)
+- [CVE-2021-26914](https://ssd-disclosure.com/ssd-advisory-netmotion-mobility-server-multiple-deserialization-of-untrusted-data-lead-to-rce/)
+
+[ysoserial](#ysoserial)
+Metasploit Exploit: exploit/windows/http/netmotion_mobility_mvcutil_deserialization
+
 ### Detect
 ##### Code review
 - *ObjectInputStream.readObject*
@@ -1263,6 +1277,7 @@ How it works:
 - [https://github.com/mbechler/marshalsec](https://github.com/mbechler/marshalsec)
 - [CVE-2020-26217](https://github.com/mai-lang-chai/Middleware-Vulnerability-detection/tree/master/XStream) 
 - [CVE-2020-26258 - SSRF](http://x-stream.github.io/CVE-2020-26258.html) 
+- [CVE-2021-29505](https://x-stream.github.io/CVE-2021-29505.html) 
 
 ### Exploits
 ##### Apache Struts (S2-052)
